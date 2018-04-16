@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #568200;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+   <children>
+      <AnchorPane layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #dddddd;">
+         <children>
+            <JFXTextField fx:id="signUpEmail" layoutX="100.0" layoutY="40.0" prefHeight="25.0" prefWidth="300.0" promptText="Email adress" unFocusColor="#87b23c" />
+            <JFXTextField fx:id="signUpFirstName" layoutX="100.0" layoutY="90.0" prefHeight="25.0" prefWidth="300.0" promptText="First Name" unFocusColor="#87b23c" />
+            <JFXTextField fx:id="signUpLastName" layoutX="101.0" layoutY="140.0" prefHeight="25.0" prefWidth="300.0" promptText="Last Name" unFocusColor="#87b23c" />
+            <JFXTextField fx:id="signUpUsername" layoutX="100.0" layoutY="190.0" prefHeight="25.0" prefWidth="300.0" promptText="Desired Username" unFocusColor="#87b23c" />
+            <JFXPasswordField fx:id="signUpPassword" layoutX="101.0" layoutY="240.0" prefHeight="25.0" prefWidth="300.0" promptText="Desired Password" unFocusColor="#87b23c">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXPasswordField>
+            <HBox alignment="CENTER" layoutX="150.0" layoutY="290.0" prefHeight="25.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <JFXRadioButton fx:id="signUpRadioButtonMale" text="Male">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="signUpRadioButtonFemale" prefHeight="17.0" prefWidth="91.0" text="Female" toggleGroup="$gender" />
+               </children>
+            </HBox>
+            <JFXTextField fx:id="signUpLocation" layoutX="100.0" layoutY="340.0" prefHeight="25.0" prefWidth="300.0" promptText="Location" unFocusColor="#87b23c" />
+            <JFXButton fx:id="signUpButton" layoutX="150.0" layoutY="385.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #19023f;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="signupEmailMemo" layoutX="100.0" layoutY="70.0" prefHeight="15.0" prefWidth="300.0" text="Please enter your email adress" textFill="#f80000" visible="false">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="signupFirstnameMemo" layoutX="100.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="300.0" text="Please enter your first name." textFill="#f80000" visible="false">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="signupLastnameMemo" layoutX="100.0" layoutY="170.0" prefHeight="15.0" prefWidth="300.0" text="Please enter your last name." textFill="#f80000" visible="false">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="signupUsernameMemo" layoutX="100.0" layoutY="220.0" prefHeight="15.0" prefWidth="300.0" text="Please enter your username." textFill="#f80000" visible="false">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="signupPasswordMemo" layoutX="100.0" layoutY="270.0" prefHeight="15.0" prefWidth="300.0" text="Please enter a password" textFill="#f80000" visible="false">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="signupGenderMemo" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="320.0" prefHeight="15.0" prefWidth="200.0" text="Please check your gender." textFill="#f80000" visible="false">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="signupLocationMemo" layoutX="100.0" layoutY="370.0" prefHeight="15.0" prefWidth="300.0" text="Please enter your location" textFill="#f80000" visible="false">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="-1.0" prefHeight="3.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Label layoutX="137.0" layoutY="445.0" prefHeight="20.0" prefWidth="159.0" text="Already has an account ?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="signUpSignIn" layoutX="296.0" layoutY="445.0" prefHeight="20.0" prefWidth="55.0" text="Sign In" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="150.0" layoutY="15.0" prefHeight="40.0" prefWidth="200.0" text="ToDoList">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="70.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="500.0" style="-fx-background-color: #275500;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.23" prefHeight="2.0" prefWidth="500.0" style="-fx-background-color: #275500;" />
+   </children>
+</AnchorPane>

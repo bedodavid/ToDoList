@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.AddItemFormController">
+   <children>
+      <AnchorPane layoutX="7.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="AddItemFormTask" focusColor="#19023f" layoutX="192.0" layoutY="121.0" prefHeight="30.0" prefWidth="316.0" text="Task" unFocusColor="#87b23c">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea fx:id="addItemFormDescription" focusColor="#19023f" layoutX="192.0" layoutY="181.0" prefHeight="95.0" prefWidth="316.0" promptText="Description" unFocusColor="#87b23c" wrapText="true" />
+            <Label alignment="CENTER" layoutX="206.0" layoutY="35.0" prefHeight="64.0" prefWidth="190.0" text="ToDoList">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: #568200;">
+               <children>
+                  <Label alignment="CENTER" layoutX="250.0" layoutY="25.0" prefHeight="50.0" prefWidth="200.0" text="ToDoList">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="addItemFormButton" layoutX="250.0" layoutY="312.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #19023f;" text="Add Task" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
